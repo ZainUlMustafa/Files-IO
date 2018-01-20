@@ -39,16 +39,18 @@ def main():
     #do the swapping
     # must remember: wr_array is a list and direct conversion to int is essential
     ''''''
-    a = int(wr_array[0]))
-    b = int(wr_array[1]))
+    a = int(wr_array[0])
+    b = int(wr_array[1])
     a = a+b
     b = a-b
     a = a-b
+    wr_array[0] = a
+    wr_array[1] = b
     ''''''
     
     #open the file in write mode
     w_file = open('test.txt', 'w')
-    w_file.write(str(a) + '\n' + str(b))
+    w_file.write(str(wr_array[0]) + '\n' + str(wr_array[1]))
     w_file.close
     
     return
