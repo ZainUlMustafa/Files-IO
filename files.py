@@ -37,9 +37,10 @@ def main():
     r_file.close
     
     #do the swapping
+    # must remember: wr_array is a list and direct conversion to int is essential
     ''''''
-    a = int(str(wr_array[0]))
-    b = int(str(wr_array[1]))
+    a = int(wr_array[0]))
+    b = int(wr_array[1]))
     a = a+b
     b = a-b
     a = a-b
